@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenden</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--responsive nav bar-->
+  <nav class="sticky top-0 z-10 flex items-center justify-between p-3 bg-green-100 shadow-xl">
+    <h1 class="text-2xl ">GREENDEN </h1>
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-6 h-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+
+    <ul class="hidden gap-5 text-gray-600 md:flex">
+      <li>
+        <a href="./index.html" class="hover:underline" href="#">Home</a>
+      </li>
+      <li>
+        <a href="./product.html" class="hover:underline" href="#">Products</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!--side nav bar-->
+  <section id="sidenav" class="fixed top-0 z-20 text-center transition-all duration-1000 bg-green-100 " style="width: 50%; height: 100vh;right:-50% ">
+    <div class="p-5 text-right">
+      <p class="inline cursor-pointer" id="closenav">X</p>
+    </div>
+    <ul class="flex-col items-center gap-10 text-gray-600 md:flex">
+      <li>
+        <a href="./index.html" class="hover:underline" href="#">Home</a>
+      </li>
+      <li>
+        <a href="./product.html"  class="hover:underline" href="#">Products</a>
+      </li>
+      <li>
+        <a  href="./contact.html"  class="hover:underline hover:text-black" href="#">Contact</a>
+      </li>
+    </ul>
+  </section>
+  <!--product section-->
+  <section class="text-center">
+    <h1 class="p-5 text-3xl font-bold">Our Products</h1>
+    <input id="search" type="text" placeholder="Search for products....."  class="p-2 m-3 border border-black " style="width: 80%;" >
+    <div id="productcontainer"class="grid grid-cols-2 gap-5 mt-5 md:grid-cols-4">
+        <div>
+            <img src="./images/BS1.jpg" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Rose plant</h1>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./images/BS2.jpg" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Purple plant</h1>
+            <p>$30</p>
+        </div>
+        <div>
+            <img src="./images/BS3.jpg" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Yellow Rose plant</h1>
+            <p>$15</p>
+        </div>
+        <div>
+            <img src="./images/BS4.jpg" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Red Leaves plant</h1>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./images/P1.png" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Charcoal plant</h1>
+            <p>$50</p>
+        </div>
+        <div>
+            <img src="./images/P2.png" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Lily plant</h1>
+            <p>$40</p>
+        </div>
+        <div>
+            <img src="./images/P3.png" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Hibiscus plant</h1>
+            <p>$60</p>
+        </div>
+        <div>
+            <img src="./images/P4.png" alt="" class="inline transform hover:shadow-xl hover:translate-y-2">
+            <h1>Dandelion plant</h1>
+            <p>$30</p>
+        </div>
+        
+    </div>
+  </section>
+  <!--footer-->
+  <section class="flex flex-col gap-5 p-10 bg-green-100 ">
+    <h1 class="text-4xl font-bold">Greenden</h1>
+    <p>We plant a tree for every purchase.</p>
+    <p>Voted Best Plant Store 2024!</p>
+    <p>@2024 Greenden.com</p>
+    
+    
+  </section>
+  <script src="./product.js"></script>
+  </body>
+  </html>
